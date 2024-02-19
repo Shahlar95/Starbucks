@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{background-color: #fff;}
+
+nav{
+
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 0 1.2px 3px rgba(0,0,0,.1),0 2px 2px rgba(0,0,0,.06),0 0 2px rgba(0,0,0,.07);
+}
+
+.nav-container{
+    margin: auto;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.menu{
+    display: flex;
+    padding: 20px 20px;
+}
+
+
+
+.menu-list ul {
+    display: flex;
+    list-style:none;
+    padding: 0px 20px;
+    
+}
+
+.menu-list ul li {
+    padding: 30px 0px;
+    margin: 0 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+}
+
+.menu-list ul li:hover{
+    color: #006241;
+}
+
+
+
+.menu-list ul li a{
+    color: black;
+    text-decoration: none;
+    
+}
+
+.menu-list ul li a::before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 25px;
+    background-color: black;
+    transition: 0.3s;
+
+}
+.menu-list ul li a:hover::before {
+    width: 100%;
+}
+.logo{
+    width: 50px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+    cursor: pointer;
+}
+
+.register p, button{
+    font-size: 14px;
+    padding: 0 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.register p{
+    margin: 0 50px;
+}
+
+.register p i {
+    margin: 0 10px;
+    
+}
+.register button{
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    
+
+}
+
+.register button:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+.register button{
+    background-color: white;
+
+}
+
+
+
+.register .second-btn{
+
+    background-color: black;
+    color: white;
+}
+
+.register .second-btn:hover{
+    background-color: rgb(70, 69, 69);
+}
+
+/* card design */
+
+.card-container{
+
+    margin: 30px auto;
+    padding: 0 100px;
+}
+
+.cards{
+    display: flex;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.card-image{
+    width: 50%;
+    
+}
+.card-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-content{
+    padding: 40px 40px;
+    width: 50%;
+    background-color: #006241;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 50px 35px;
+    
+}
+
+
+.card-text h2{
+    font-size: 50px;
+   padding: 10px 0;
+}
+
+.card-text p {
+    font-size: 24px;
+    padding: 20px 0;
+}
+.card-text button{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 8px 21px;
+    border-radius: 20px;
+    color: #fff;
+    border: 1px solid white;
+    background-color: #006241;
+}
+
+.card-text button:hover{
+    background-color: #194439;
+}
+
+.card-container .cards:nth-child(2) .card-content, .card-container .cards:nth-child(2) .card-content button{
+    background-color: #1e3932;
+}
+
+.card-container .cards:nth-child(4) .card-content, .card-container .cards:nth-child(4) .card-content button{
+    background-color: #d69a2d;
+}
+
+
+.cards:nth-child(2) .card-content button:hover,.cards:nth-child(4) .card-content button:hover{
+    background-color: rgba(0, 0, 0, 0.315);
+}
